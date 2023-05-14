@@ -22,11 +22,10 @@ app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname, "../web/public")));
 
-app.use(errorHandler)
-app.use(notFoundHandler)
-
-
 //Routes
 import index from './routes/index.js'
 app.use("/", index)
 
+
+app.use(errorHandler)
+app.use(notFoundHandler)

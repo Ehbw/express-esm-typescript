@@ -5,7 +5,7 @@ declare type RequestError = Error & {
 }
 
 export function errorHandler (err: RequestError, req: Request, res: Response, next: NextFunction): void {
-    res.status(err.status || 500);
+    res.status(err.status || 500).send(err.message);
 }
 
 export function notFoundHandler (req: Request, res: Response, next: NextFunction): void {
