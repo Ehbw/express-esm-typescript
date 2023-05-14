@@ -1,0 +1,19 @@
+#Development
+.env
+node_modules
+
+pnpm-lock.yaml
+
+#Editors
+.fleet
+.idea
+*.iml
+.vscode/settings.json
+
+#OS
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+
+#Built files
+dist/**/*
