@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { app } from "../app";
+import app from "../app.js";
 
 describe("Bad requests", () => {
     it("should return status 404 for non-existance endpoints/files", () => {
